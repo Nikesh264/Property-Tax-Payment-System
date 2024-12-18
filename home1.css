@@ -1,0 +1,158 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: linen;
+    text-align: center;
+    height: 100vh;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+}
+
+.logo img {
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+}
+
+.heading h2 {
+    font-size: 1.8rem;
+    color: black;
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: purple;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Corner Images */
+.topleft, .topright, .bottomleft, .bottomright {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    padding: 5px;
+    border: 2px solid #ccc;
+}
+
+.topleft {
+    top: 35%;
+    left: 2%;
+}
+
+.topright {
+    top: 35%;
+    right: 2%;
+}
+
+.bottomleft {
+    bottom: 10%;
+    left: 2%;
+}
+
+.bottomright {
+    bottom: 10%;
+    right: 2%;
+}
+
+.topleft img, .topright img, .bottomleft img, .bottomright img {
+    width: 100%;
+    height: auto;
+}
+
+/* Center Content */
+.center-content {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.welcome {
+    font-size: 2.5rem;
+    color: red;
+}
+
+.ptp {
+    font-size: 3rem;
+    color: black;
+}
+
+.center-content p {
+    font-size: 1.2rem;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img {
+        margin: 0 auto 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .topleft, .topright, .bottomleft, .bottomright {
+        width: 120px;
+        height: 120px;
+    }
+
+    .heading h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .topleft, .topright, .bottomleft, .bottomright {
+        width: 100px;
+        height: 100px;
+    }
+
+    .heading h2 {
+        font-size: 1.2rem;
+    }
+
+    .nav a {
+        font-size: 1rem;
+    }
+
+    .welcome {
+        font-size: 2rem;
+    }
+
+    .ptp {
+        font-size: 2.5rem;
+    }
+}

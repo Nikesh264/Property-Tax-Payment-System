@@ -1,0 +1,140 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D2B4DE;
+    text-align: center;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+}
+
+.logo img {
+    width: 75px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.heading h1 {
+    font-size: 1.8rem;
+    color: black;
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: purple;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: red;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+}
+
+input, select, button {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    text-align: center;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkmagenta;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+
+    label {
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 5px;
+    }
+
+    label {
+        width: auto;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}

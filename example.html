@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <img src="pic1.png" alt="Logo">
+        </div>
+        <div class="heading">
+            <h1>PROPERTY TAX PAYMENT</h1>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="nav">
+        <a href="home.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="example.html">CALCULATION</a>
+        <a href="gateway.html">PAYMENT</a>
+    </nav>
+
+    <!-- Registration Form -->
+    <main class="form-container">
+        <h2>REGISTRATION FORM</h2>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="tx1">NAME:</label></td>
+                    <td><input type="text" id="tx1" required></td>
+                </tr>
+                <tr>
+                    <td><label for="tx2">PHONE NO:</label></td>
+                    <td><input type="tel" id="tx2" pattern="[0-9]{10}" required></td>
+                </tr>
+                <tr>
+                    <td><label for="tx3">HOUSE NO:</label></td>
+                    <td><input type="text" id="tx3" required></td>
+                </tr>
+                <tr>
+                    <td><label for="tx4">AREA:</label></td>
+                    <td><input type="text" id="tx4" required></td>
+                </tr>
+                <tr>
+                    <td><label for="tx5">SQUARE FEET:</label></td>
+                    <td><input type="number" id="tx5" required></td>
+                </tr>
+                <tr>
+                    <td><label for="tps">USAGE:</label></td>
+                    <td>
+                        <select id="tps" required>
+                            <option value="1">Personal property</option>
+                            <option value="2">Land</option>
+                            <option value="3">Improvements and upgrades made to land</option>
+                            <option value="4">Intangible property</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="fl">FLOOR:</label></td>
+                    <td>
+                        <select id="fl" required>
+                            <option value="-1">CELLAR/STILT</option>
+                            <option value="0">GROUND</option>
+                            <option value="1">1st FLOOR</option>
+                            <option value="2">2nd FLOOR</option>
+                            <option value="3">3rd FLOOR</option>
+                            <option value="4">4th FLOOR</option>
+                            <option value="5">5th FLOOR</option>
+                            <option value="6">6th FLOOR</option>
+                            <option value="7">7th FLOOR</option>
+                            <option value="8">8th FLOOR</option>
+                            <option value="9">9th FLOOR</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="tx6">AGE OF BUILDING:</label></td>
+                    <td><input type="number" id="tx6" required></td>
+                </tr>
+                <tr>
+                    <td>SELECT THE PLAN:</td>
+                    <td>
+                        <input type="radio" id="r1" name="g" value="6" required>
+                        <label for="r1">6-Months</label>
+                        <input type="radio" id="r2" name="g" value="12" required>
+                        <label for="r2">12-Months</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="submit-btn">
+                        <button type="submit" onclick="disp()">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="inner.js"></script>
+</body>
+</html>

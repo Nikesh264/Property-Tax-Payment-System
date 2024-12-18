@@ -1,0 +1,147 @@
+/* General Reset and Styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background: #333; /* Darker background for better contrast */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: #fff;
+}
+
+.navbar .logo img {
+    width: 75px;
+    height: 61px;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav-links ul li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.navbar .nav-links ul li a:hover {
+    color: #27ae60; /* Green color on hover */
+}
+
+/* Heading Styling */
+.heading h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 36px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* Container for the form */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #2ecc71 60%, #27ae60 40.1%);
+}
+
+.container form {
+    padding: 20px;
+    width: 700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.container form h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container form .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container form .row .col {
+    flex: 1 1 250px;
+}
+
+.container form .inputBox {
+    margin: 15px 0;
+}
+
+.container form .inputBox span {
+    margin-bottom: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+.container form .inputBox input,
+.container form .inputBox select {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.container form .inputBox input:focus,
+.container form .inputBox select:focus {
+    border: 1px solid #27ae60;
+}
+
+.container form .submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: #27ae60;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.container form .submit-btn:hover {
+    background: #2ecc71;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container form {
+        width: 90%;
+    }
+
+    .container form .row .col {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container form .submit-btn {
+        font-size: 16px;
+    }
+}
